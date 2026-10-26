@@ -228,3 +228,47 @@ body {
     line-height: 1.5;
   }
 }
+
+/* 星の中に入るテキストロゴ */
+.star-text-logo {
+  position: relative;
+  z-index: 2; /* 星の上に表示 */
+  font-size: 13px;
+  font-weight: 700;
+  color: #111111;
+  text-align: center;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+/* 小さく添えるサブテキスト */
+.star-text-logo small {
+  font-size: 9px;
+  font-weight: 400;
+  color: #666666;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-top: 2px;
+}
+
+/* スマホ表示時のサイズ調整 */
+@media (max-width: 600px) {
+  .star-text-logo {
+    font-size: 11px;
+  }
+  .star-text-logo small {
+    font-size: 8px;
+  }
+}
+
+/* ===============
+      フッター
+   =============== */
+footer{
+text-align:center;
+margin-top:40px;
+padding-top:20px;
+color: #000;
+font-size:0.8rem;
+letter-spacing:0.5px;
+}

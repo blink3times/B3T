@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/* ==========================================
+   全体の設定（カラー・リセット）
+   ========================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+  line-height: 1.7;
+  padding: 30px 20px 80px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   上部の戻るリンク
+   ========================================== */
+.nav-header {
+  margin-bottom: 24px;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 12px;
+  color: #666666;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #111111;
+}
+
+
+/* ==========================================
+   メインカードのデザイン
+   ========================================== */
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px solid #111111; /* TOPページと合わせた黒の細縁 */
+  border-radius: 16px;
+  padding: 40px 32px;
+  /* 右下にふんわり落ちる影（TOPの星と同じテイスト） */
+  box-shadow: 4px 6px 0px rgba(244, 114, 182, 0.2), 2px 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ==========================================
+   見出し・テキストのデザイン
+   ========================================== */
+/* 大タイトル（ABOUT） */
+.page-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.page-title span {
+  border-bottom: 2px solid #111111;
+  padding-bottom: 4px;
+}
+
+/* ブランド名表示 */
+.brand-info {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.brand-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  letter-spacing: 0.04em;
+}
+
+.brand-sub {
+  font-size: 12px;
+  color: #777777;
+  letter-spacing: 0.1em;
+  margin-top: 2px;
+}
+
+.brand-sub span {
+  color: #f472b6; /* B3Tの部分をほんのりピンクに */
+  font-weight: bold;
+}
+
+/* 本文ブロック */
+.about-text {
+  font-size: 13.5px;
+  color: #444444;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+/* 小見出し（CONCEPTなど） */
+.section-heading {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* 小見出しの頭に小さなピンクの星を飾る */
+.section-heading::before {
+  content: "★";
+  font-size: 12px;
+  color: #fbcfe8;
+  -webkit-text-stroke: 1px #111111;
+}
+
+.section-heading span {
+  border-bottom: 1.5px solid #111111;
+  padding-bottom: 1px;
+}
+
+
+/* ==========================================
+   スマホ表示時の調整（レスポンシブ）
+   ========================================== */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 12px 60px;
+  }
+
+  .about-card {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+
+  .page-title {
+    font-size: 19px;
+    margin-bottom: 22px;
+  }
+
+  .about-text {
+    font-size: 12.5px;
+  }
+}
+
+/* ===============
+      フッター
+   =============== */
+footer{
+text-align:center;
+margin-top:40px;
+padding-top:20px;
+color: #000;
+font-size:0.8rem;
+letter-spacing:0.5px;
+}
